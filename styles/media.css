@@ -1,0 +1,42 @@
+@media screen and (max-width: 980px) {
+    .photo img, 
+    .photo1 img {
+        max-width: 120px;
+    }
+    .contacts h1 {
+        font-size: 10px;
+    }
+    #op1 p {
+        font-size: 6px;
+    }
+    .photo1 {
+        margin-left: 0px;
+    }
+    .name h1 {
+        font-size: 10px;
+    }
+    .posit {
+        font-size: 8px;
+    }
+    .desc_bio p {
+        font-size: 9px;
+    }
+    .desc_bio a {
+        font-size: 7px;
+    }
+    .otz_txt p {
+        font-size: 9px;
+    }
+    .name_o p {
+    	font-size: 8px;
+    }
+    .date_feed p {
+    	font-size: 8px;
+    }
+    #cont_info {
+        font-size: 10px;
+    }
+    #cont_data p {
+        font-size: 9px;
+    }
+}
