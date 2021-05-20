@@ -14,7 +14,7 @@ else: ?>
     <h1 id="team">Наша команда</h1>
 </div>
 <?php
-$table = $connect->query("SELECT * FROM members"); 
+$table = $connect->query("SELECT * FROM members WHERE isactive=1"); 
 endif;
 
 while($m = $table->fetch_assoc()) : 
