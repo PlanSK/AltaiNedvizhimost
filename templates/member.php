@@ -8,7 +8,6 @@ if (isset($fm)): ?>
 </div>
 <?php
     $table = $test; 
-    // echo('zahod1');
 else: ?> 
 <div class="z1 otstup">
     <h1 id="team">Наша команда</h1>
@@ -20,7 +19,12 @@ endif;
 while($m = $table->fetch_assoc()) : 
     $m_id = 0;
     $feed_member = $connect->query('SELECT * FROM feedbacks WHERE id_member='.$m['id']);
-    if ($feed_member->num_rows) { $m_id=$m['id']; }
+    if ($feed_member->num_rows) { 
+        $m_id=$m['id'];
+    }
+    if ($m['img'] == "") {
+        $m['img'] = "photo0.png";
+    }
 ?>
 <div class="flexed member" id="<?php echo 'm'.$m['id'] ?>">
 <?php if (($i % 2) == 0): ?>
